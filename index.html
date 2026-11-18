@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PawPals Pet Shop | Grooming, Pet Food, Check-ups &amp; Supplies</title>
+<meta name="description" content="PawPals Pet Shop: pet grooming, pet food, supplies, vet check-ups, boarding and training. Book your pet's visit today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="nav">
+  <a href="#home" class="brand"><div class="logo"><div class="slot "><img src="CircleDog.png" alt="" loading="lazy" onerror="this.remove()"></div></div><span>PawPals</span></a>
+  <input type="checkbox" id="nav-toggle" aria-label="Menu">
+  <nav class="menu">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
+    <a href="#products">Products</a><a href="#team">Team</a><a href="#contact">Contact</a>
+  </nav>
+  <a class="btn" href="#contact">Book a visit</a>
+  <label class="burger" for="nav-toggle"><span></span><span></span><span></span></label>
+</header>
+
+<!-- ===== HOME ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg"><div class="slot "><img src="DogHome.png" alt="" loading="lazy" onerror="this.remove()"></div></div>
+  <div class="paw p1"><svg viewBox="0 0 64 64"><ellipse cx="32" cy="42" rx="14" ry="12"/><ellipse cx="12" cy="28" rx="6" ry="8"/><ellipse cx="25" cy="14" rx="6" ry="8"/><ellipse cx="39" cy="14" rx="6" ry="8"/><ellipse cx="52" cy="28" rx="6" ry="8"/></svg></div>
+  <div class="paw p2"><svg viewBox="0 0 64 64"><ellipse cx="32" cy="42" rx="14" ry="12"/><ellipse cx="12" cy="28" rx="6" ry="8"/><ellipse cx="25" cy="14" rx="6" ry="8"/><ellipse cx="39" cy="14" rx="6" ry="8"/><ellipse cx="52" cy="28" rx="6" ry="8"/></svg></div>
+  <div class="paw p3"><svg viewBox="0 0 64 64"><ellipse cx="32" cy="42" rx="14" ry="12"/><ellipse cx="12" cy="28" rx="6" ry="8"/><ellipse cx="25" cy="14" rx="6" ry="8"/><ellipse cx="39" cy="14" rx="6" ry="8"/><ellipse cx="52" cy="28" rx="6" ry="8"/></svg></div>
+  <div class="container hero-inner">
+    <div>
+      <span class="eyebrow">Pet shop · Grooming · Vet care</span>
+      <h1>Where every pet feels <em>loved</em> &amp; looks great</h1>
+      <p>Grooming, premium pet food, supplies, check-ups and boarding, all under one friendly roof. Your best friend deserves the best day.</p>
+      <div class="hero-btns"><a class="btn alt" href="#services">Our services</a><a class="btn ghost" href="#contact">Book a visit</a></div>
+      <div class="hero-badges"><div><b data-count="5000">0</b>Happy pets</div><div><b data-count="12">0</b>Years of care</div><div><b data-count="4.9">0</b>Star rating</div></div>
+    </div>
+    <div class="mascot-wrap">
+      <div class="bubble" id="bubble">Woof! 🐾</div>
+      <!-- Animated dog mascot (click it!). Delete this whole block if you prefer only a photo. -->
+      <svg class="mascot" id="mascot" viewBox="0 0 400 400" role="img" aria-label="Happy dog mascot">
+        <ellipse cx="200" cy="385" rx="120" ry="12" fill="rgba(0,0,0,.18)"/>
+        <g id="tail"><path d="M290 300 Q350 260 345 200" stroke="#FBB931" stroke-width="26" stroke-linecap="round" fill="none"/></g>
+        <ellipse cx="200" cy="320" rx="95" ry="70" fill="#FBB931"/>
+        <ellipse cx="200" cy="335" rx="55" ry="50" fill="#FFE3B3"/>
+        <rect x="140" y="340" width="36" height="42" rx="18" fill="#F88F22"/>
+        <rect x="224" y="340" width="36" height="42" rx="18" fill="#F88F22"/>
+        <g id="head">
+          <path d="M105 130 Q60 130 70 230 Q100 235 125 190Z" fill="#EA6113"/>
+          <path d="M295 130 Q340 130 330 230 Q300 235 275 190Z" fill="#EA6113"/>
+          <ellipse cx="200" cy="170" rx="100" ry="92" fill="#F88F22"/>
+          <ellipse cx="200" cy="205" rx="62" ry="48" fill="#FFE3B3"/>
+          <ellipse class="eye" cx="162" cy="155" rx="13" ry="16" fill="#2A1B14"/>
+          <ellipse class="eye" cx="238" cy="155" rx="13" ry="16" fill="#2A1B14"/>
+          <circle cx="166" cy="149" r="4" fill="#fff"/><circle cx="242" cy="149" r="4" fill="#fff"/>
+          <ellipse cx="200" cy="190" rx="22" ry="15" fill="#2A1B14"/>
+          <path d="M200 205 V222 M200 222 Q182 238 168 222 M200 222 Q218 238 232 222" stroke="#2A1B14" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path id="tongue" d="M190 232 Q200 270 212 232Z" fill="#EA6113"/>
+        </g>
+        <path d="M150 292 Q200 312 250 292" stroke="#EA6113" stroke-width="14" fill="none" stroke-linecap="round"/>
+        <circle cx="200" cy="312" r="10" fill="#FBB931" stroke="#fff" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUICK BOOKING BAR ===== -->
+<div class="quick"><div class="container">
+  <form class="quick-bar" id="quickForm">
+    <div><label for="qs">Service</label><select id="qs"><option value="">Choose a service</option><option>Grooming & Spa</option><option>Pet Shop & Supplies</option><option>Pet Food & Nutrition</option><option>Pet Check-up & Vaccines</option><option>Boarding & Daycare</option><option>Training & Behavior</option></select></div>
+    <div><label for="qp">Pet type</label><select id="qp"><option>Dog</option><option>Cat</option><option>Bird</option><option>Small pet</option><option>Other</option></select></div>
+    <div><label for="qd">Preferred date</label><input type="date" id="qd"></div>
+    <button class="btn" type="submit">Book now</button>
+  </form>
+</div></div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="frame reveal">
+        <div class="badge"><div><b>12+</b>years of<br>pet love</div></div>
+        <div class="main"><div class="slot "><img src="PetShop.png" alt="" loading="lazy" onerror="this.remove()"></div></div>
+      </div>
+      <div class="about-text reveal">
+        <span class="eyebrow">About PawPals</span>
+        <h2>A one-stop home for happy, healthy pets</h2>
+        <p>We started as a tiny neighborhood pet shop and grew into a full pet care center. Today our team of groomers, vets and pet lovers looks after thousands of dogs, cats and small pets every year.</p>
+        <p>Every product on our shelves is chosen by pet parents like you, and every service is done with patience, gentle hands and a lot of treats.</p>
+        <ul class="ticks"><li>Certified groomers</li><li>Licensed veterinarians</li><li>Premium brands only</li><li>Stress-free handling</li></ul>
+        <a class="btn" href="#team">Meet our team</a>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><b data-count="5000">0</b>Happy pets</div>
+      <div class="stat reveal"><b data-count="30">0</b>Team members</div>
+      <div class="stat reveal"><b data-count="800">0</b>Products</div>
+      <div class="stat reveal"><b data-count="12">0</b>Years of care</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow">What we do</span><h2>Everything your pet needs</h2><p>From a fresh bath to a full check-up, pick a service and book it in seconds.</p></div>
+    <div class="cards"><article class="card reveal"><div class="pic"><div class="slot "><span class="slot-tag">images/service-grooming.jpg</span><img src="Groom.avif" alt="" loading="lazy" onerror="this.remove()"></div></div><div class="body"><h3>Grooming & Spa</h3><p>Baths, haircuts, nail trims and spa treatments that leave tails wagging.</p><span class="price">From $25</span><a class="btn" href="#contact" data-service="Grooming & Spa">Book now →</a></div></article><article class="card reveal"><div class="pic"><div class="slot "><img src="PetAccess.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><div class="body"><h3>Pet Shop & Supplies</h3><p>Toys, beds, leashes, collars and accessories for every dog, cat and small pet.</p><span class="price">Shop in store</span><a class="btn" href="#contact" data-service="Pet Shop & Supplies">Book now →</a></div></article><article class="card reveal"><div class="pic"><div class="slot "><img src="PetFood.avif" alt="" loading="lazy" onerror="this.remove()"></div></div>
+    <div class="body"><h3>Pet Food & Nutrition</h3><p>Premium kibble, wet food and treats, plus free diet advice from our team.</p><span class="price">From $9</span><a class="btn" href="#contact" data-service="Pet Food & Nutrition">Book now →</a></div></article><article class="card reveal"><div class="pic"><div class="slot "><img src="service-check.avif" alt="" loading="lazy" onerror="this.remove()"></div></div>
+    <div class="body"><h3>Pet Check-up & Vaccines</h3><p>Friendly vets for health exams, vaccinations, microchipping and dental care.</p><span class="price">From $30</span><a class="btn" href="#contact" data-service="Pet Check-up & Vaccines">Book now →</a></div></article><article class="card reveal"><div class="pic"><div class="slot "><img src="service-cozy.avif" alt="" loading="lazy" onerror="this.remove()"></div></div><div class="body"><h3>Boarding & Daycare</h3><p>A safe, cozy second home with play time, walks and daily photo updates.</p><span class="price">From $20 / day</span><a class="btn" href="#contact" data-service="Boarding & Daycare">Book now →</a></div></article><article class="card reveal"><div class="pic"><div class="slot "><img src="service-training.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><div class="body"><h3>Training & Behavior</h3><p>Puppy classes and obedience training with positive, reward-based methods.</p><span class="price">From $40 / session</span><a class="btn" href="#contact" data-service="Training & Behavior">Book now →</a></div></article></div>
+    <div class="packs"><div class="pack reveal"><h4>Fresh Start</h4><div class="amt">$25</div><ul><li>Bath & blow-dry</li><li>Ear cleaning</li><li>Nail trim</li></ul><a class="btn alt" href="#contact" data-service="Grooming & Spa">Choose plan</a></div><div class="pack reveal hot"><h4>Full Groom</h4><div class="amt">$45</div><ul><li>Bath & haircut</li><li>Nail trim & ear care</li><li>Teeth brushing</li><li>Bow or bandana</li></ul><a class="btn" href="#contact" data-service="Grooming & Spa">Choose plan</a></div><div class="pack reveal"><h4>Royal Spa</h4><div class="amt">$70</div><ul><li>Full Groom</li><li>Aromatherapy bath</li><li>Paw balm massage</li><li>Photo shoot</li></ul><a class="btn alt" href="#contact" data-service="Grooming & Spa">Choose plan</a></div></div>
+    <div class="steps"><div class="step reveal"><h4>Book</h4><p>Pick a service online or call us.</p></div><div class="step reveal"><h4>Drop off</h4><p>Bring your pet in; we will say hello.</p></div><div class="step reveal"><h4>Pamper & care</h4><p>Our team looks after every detail.</p></div><div class="step reveal"><h4>Happy pickup</h4><p>Collect a happy, healthy friend.</p></div></div>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section id="products">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow">Pet shop</span><h2>Popular products</h2><p>Food, toys and accessories picked by our team. Tap a filter to browse.</p></div>
+    <div class="chips" data-target=".prod">
+      <button class="chip on" data-filter="all">All</button><button class="chip" data-filter="dog">Dogs</button><button class="chip" data-filter="cat">Cats</button><button class="chip" data-filter="small">Small pets</button><button class="chip" data-filter="accessories">Accessories</button>
+    </div>
+    <div class="products"><article class="prod reveal" data-cat="dog"><div class="pic"><span class="tag">Best seller</span><div class="slot "><img src="shop-food.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><div class="info"><h4>Dog Food Premium</h4><small>Dog Food</small><div class="row"><b>$32</b><a href="#contact" data-service="Pet Shop & Supplies" aria-label="Ask about Dog Food Premium">+</a></div></div></article><article class="prod reveal" data-cat="cat"><div class="pic"><div class="slot "><img src="shop-food-cat.avif" alt="" loading="lazy" onerror="this.remove()"></div></div><div class="info"><h4>Cat Food Delight</h4><small>Cat Food</small><div class="row"><b>$28</b><a href="#contact" data-service="Pet Shop & Supplies" aria-label="Ask about Cat Food Delight">+</a></div></div></article><article class="prod reveal" data-cat="dog"><div class="pic"><div class="slot "><img src="shop-treats.avif" alt="" loading="lazy" onerror="this.remove()"></div></div><div class="info"><h4>Training Treats</h4><small>Treats</small><div class="row"><b>$8</b><a href="#contact" data-service="Pet Shop & Supplies" aria-label="Ask about Training Treats">+</a></div></div></article><article class="prod reveal" data-cat="accessories"><div class="pic"><span class="tag">New</span><div class="slot "><img src="shop-bed.avif" alt="" loading="lazy" onerror="this.remove()"></div></div><div class="info"><h4>Cozy Pet Bed</h4><small>Beds</small><div class="row"><b>$45</b><a href="#contact" data-service="Pet Shop & Supplies" aria-label="Ask about Cozy Pet Bed">+</a></div></div></article><article class="prod reveal" data-cat="dog"><div class="pic"><div class="slot "><img src="shop-toy.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><div class="info"><h4>Squeaky Toy Set</h4><small>Toys</small><div class="row"><b>$14</b><a href="#contact" data-service="Pet Shop & Supplies" aria-label="Ask about Squeaky Toy Set">+</a></div></div></article><article class="prod reveal" data-cat="cat"><div class="pic"><div class="slot "><img src="shop-scratch.avif" alt="" loading="lazy" onerror="this.remove()"></div></div><div class="info"><h4>Cat Scratch Tower</h4><small>Toys</small><div class="row"><b>$59</b><a href="#contact" data-service="Pet Shop & Supplies" aria-label="Ask about Cat Scratch Tower">+</a></div></div></article><article class="prod reveal" data-cat="accessories"><div class="pic"><div class="slot "><img src="shop-leash.avif" alt="" loading="lazy" onerror="this.remove()"></div></div><div class="info"><h4>Leash & Collar Set</h4><small>Accessories</small><div class="row"><b>$22</b><a href="#contact" data-service="Pet Shop & Supplies" aria-label="Ask about Leash & Collar Set">+</a></div></div></article><article class="prod reveal" data-cat="small"><div class="pic"><div class="slot "><img src="shop-tank.avif" alt="" loading="lazy" onerror="this.remove()"></div></div><div class="info"><h4>Fish Tank Starter</h4><small>Aquarium</small><div class="row"><b>$65</b><a href="#contact" data-service="Pet Shop & Supplies" aria-label="Ask about Fish Tank Starter">+</a></div></div></article><article class="prod reveal" data-cat="small"><div class="pic"><div class="slot "><img src="shop-seed.avif" alt="" loading="lazy" onerror="this.remove()"></div></div><div class="info"><h4>Bird Seed Mix</h4><small>Small pets</small><div class="row"><b>$10</b><a href="#contact" data-service="Pet Shop & Supplies" aria-label="Ask about Bird Seed Mix">+</a></div></div></article><article class="prod reveal" data-cat="small"><div class="pic"><div class="slot "><img src="shop-rabbit.avif" alt="" loading="lazy" onerror="this.remove()"></div></div><div class="info"><h4>Rabbit</h4><small>Small pets</small><div class="row"><b>$12</b><a href="#contact" data-service="Pet Shop & Supplies" aria-label="Ask about Rabbit Hay Bundle">+</a></div></div></article><article class="prod reveal" data-cat="accessories"><div class="pic"><span class="tag">Sale</span><div class="slot "><img src="shop-shampoo.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><div class="info"><h4>Shampoo & Care Kit</h4><small>Grooming</small><div class="row"><b>$18</b><a href="#contact" data-service="Pet Shop & Supplies" aria-label="Ask about Shampoo & Care Kit">+</a></div></div></article><article class="prod reveal" data-cat="accessories"><div class="pic"><div class="slot "><img src="shop-carrier.avif" alt="" loading="lazy" onerror="this.remove()"></div></div><div class="info"><h4>Travel Carrier</h4><small>Accessories</small><div class="row"><b>$40</b><a href="#contact" data-service="Pet Shop & Supplies" aria-label="Ask about Travel Carrier">+</a></div></div></article></div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section id="team">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow">Our people</span><h2>Meet the PawPals team</h2><p>The friendly faces who care for your pets every day.</p></div>
+    <div class="chips" data-target=".member">
+      <button class="chip on" data-filter="all">Everyone</button><button class="chip" data-filter="ceo">CEO</button><button class="chip" data-filter="manager">Managers</button><button class="chip" data-filter="groomer">Groomers</button><button class="chip" data-filter="staff">Specialists</button>
+    </div>
+    <div class="team"><article class="member reveal ceo" data-cat="ceo"><div class="pic"><div class="slot "><img src="women1.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><h4>Chloe Alexandra Santos</h4><span class="role">CEO & Founder</span><p>Started PawPals with one dream: happier pets.</p></article><article class="member reveal" data-cat="manager">
+    <div class="pic"><div class="slot "><img src="men1.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><h4>Ethan Gabriel Santos</h4><span class="role">Operations Manager</span><p>Keeps everything running smoothly.</p></article><article class="member reveal" data-cat="manager"><div class="pic">
+    <div class="slot "><img src="women2.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><h4>Isabella Marie Cruz</h4><span class="role">Store Manager</span><p>Your go-to for products and orders.</p></article><article class="member reveal" data-cat="staff"><div class="pic">
+    <div class="slot "><img src="women3.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><h4>Sophia Nicole Reyes</h4><span class="role">Head Veterinarian</span><p>Caring for pets for over 10 years.</p></article><article class="member reveal" data-cat="groomer"><div class="pic">
+    <div class="slot "><img src="men2.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><h4>Liam Alexander Cruz</h4><span class="role">Head Groomer</span><p>Award-winning breed-specific styling.</p></article><article class="member reveal" data-cat="groomer">
+    <div class="pic"><div class="slot "><img src="men3.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><h4>Noah Daniel Reyes</h4><span class="role">Senior Groomer</span><p>Gentle with even the shyest pets.</p></article><article class="member reveal" data-cat="groomer">
+    <div class="pic"><div class="slot "><img src="men4.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><h4>Lucas Matthew Garcia</h4><span class="role">Groomer</span><p>Loves creative cuts and colors.</p></article><article class="member reveal" data-cat="staff"><div class="pic">
+    <div class="slot "><img src="men5.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><h4>Mason James Bautista</h4><span class="role">Pet Trainer</span><p>Positive training for all ages.</p></article><article class="member reveal" data-cat="staff">
+    <div class="pic"><div class="slot "><img src="women4.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><h4>Mia Beatrice Garcia</h4><span class="role">Nutrition Advisor</span><p>Finds the perfect diet for every pet.</p></article><article class="member reveal" data-cat="staff">
+    <div class="pic"><div class="slot "><img src="men6.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><h4>Oliver Benjamin Mendoza</h4><span class="role">Daycare Supervisor</span><p>Makes playtime safe and fun.</p></article><article class="member reveal" data-cat="staff"><div class="pic">
+    <div class="slot "><img src="women5.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><h4>Hannah Louise Bautista</h4><span class="role">Sales Associate</span><p>Happy to help you shop.</p></article><article class="member reveal" data-cat="staff"><div class="pic">
+    <div class="slot "><img src="women6.webp" alt="" loading="lazy" onerror="this.remove()"></div></div><h4>Emma Claire Mendoza</h4><span class="role">Customer Support</span><p>Answers your questions fast.</p></article></div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery">
+  <div class="container">
+
+    <div class="sec-head reveal">
+      <span class="eyebrow">Gallery</span>
+      <h2>Happy customers, happy tails</h2>
+      <p>A peek at the pets we love to pamper.</p>
+    </div>
+
+    <div class="gallery">
+
+      <div class="g reveal">
+        <div class="slot">
+          <span class="slot-tag">images/gallery-1.jpg</span>
+          <img src="gallery-dog1.avif" alt="" loading="lazy" onerror="this.remove()">
+        </div>
+      </div>
+
+      <div class="g reveal">
+        <div class="slot">
+          <span class="slot-tag">images/gallery-2.jpg</span>
+          <img src="gallery-dog2.avif" alt="" loading="lazy" onerror="this.remove()">
+        </div>
+      </div>
+
+      <div class="g reveal">
+        <div class="slot">
+          <span class="slot-tag">images/gallery-3.jpg</span>
+          <img src="gallery-dog3.avif" alt="" loading="lazy" onerror="this.remove()">
+        </div>
+      </div>
+
+      <div class="g reveal">
+        <div class="slot">
+          <span class="slot-tag">images/gallery-4.jpg</span>
+          <img src="gallery-dog4.avif" alt="" loading="lazy" onerror="this.remove()">
+        </div>
+      </div>
+
+      <div class="g reveal">
+        <div class="slot">
+          <span class="slot-tag">images/gallery-5.jpg</span>
+          <img src="gallery-dog5.avif" alt="" loading="lazy" onerror="this.remove()">
+        </div>
+      </div>
+
+      <div class="g reveal">
+        <div class="slot">
+          <span class="slot-tag">images/gallery-6.jpg</span>
+          <img src="gallery-dog6.avif" alt="" loading="lazy" onerror="this.remove()">
+        </div>
+      </div>
+
+      <div class="g reveal">
+        <div class="slot">
+          <span class="slot-tag">images/gallery-7.jpg</span>
+          <img src="gallery-dog7.avif" alt="" loading="lazy" onerror="this.remove()">
+        </div>
+      </div>
+
+      <div class="g reveal">
+        <div class="slot">
+          <span class="slot-tag">images/gallery-8.jpg</span>
+          <img src="gallery-dog8.avif" alt="" loading="lazy" onerror="this.remove()">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" style="background:var(--sun-200)">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow">FAQ</span><h2>Good questions</h2></div>
+    <div class="faq"><details class='reveal'><summary>Do I need an appointment for grooming?</summary><p>Appointments are recommended, but walk-ins are welcome when we have space.</p></details><details class='reveal'><summary>Which pets do you accept?</summary><p>Dogs and cats for grooming, check-ups and boarding. Our shop also supplies birds, fish and small pets.</p></details><details class='reveal'><summary>Are vaccinations required for boarding?</summary><p>Yes. Please bring your pet's up-to-date vaccination record.</p></details><details class='reveal'><summary>Do you offer home delivery for pet food?</summary><p>Yes, we deliver locally. Ask us about our subscription plan.</p></details><details class='reveal'><summary>What payment methods do you accept?</summary><p>Cash, major cards and popular e-wallets.</p></details></div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow">Contact us</span><h2>Let's talk about your pet</h2><p>Book a visit, ask a question or just say hello.</p></div>
+    <div class="contact-cards">
+      <div class="c-card reveal"><div class="ic">📍</div><h4>Visit us</h4><p>123 Paw Street, Your City</p></div>
+      <div class="c-card reveal"><div class="ic">📞</div><h4>Call us</h4><p>+1 234 567 890</p></div>
+      <div class="c-card reveal"><div class="ic">✉️</div><h4>Email</h4><p>hello@pawpals.com</p></div>
+      <div class="c-card reveal"><div class="ic">🕘</div><h4>Open daily</h4><p>Mon–Sat 8am–7pm</p></div>
+    </div>
+    <div class="contact-grid">
+      <div class="panel reveal">
+        <h3>Follow &amp; find us</h3>
+        <p>Daily cuteness on our social pages.</p>
+        <div class="socials">
+          <a href="#" target="_blank" rel="noopener"><span>Fb</span>Facebook</a>
+          <a href="#" target="_blank" rel="noopener"><span>Ig</span>Instagram</a>
+          <a href="#" target="_blank" rel="noopener"><span>Tk</span>TikTok</a>
+          <a href="#" target="_blank" rel="noopener"><span>Yt</span>YouTube</a>
+        </div>
+        <ul class="hours"><li>Mon – Fri<b>8:00 – 19:00</b></li><li>Saturday<b>9:00 – 18:00</b></li><li>Sunday<b>10:00 – 16:00</b></li></ul>
+        <a class="map" href="https://www.google.com/maps/search/petshopamerica" target="_blank" rel="noopener"><div class="slot "><img src="map.png" alt="" loading="lazy" onerror="this.remove()"></div></a>
+      </div>
+      <form class="form reveal" id="contactForm">
+        <h3>Send us a message</h3>
+        <div><label for="fn">Your name</label><input id="fn" required placeholder="Jane Doe"></div>
+        <div><label for="fe">Email</label><input id="fe" type="email" required placeholder="you@email.com"></div>
+        <div><label for="fs">Service</label><select id="fs"><option value="">Choose a service</option><option>Grooming & Spa</option><option>Pet Shop & Supplies</option><option>Pet Food & Nutrition</option><option>Pet Check-up & Vaccines</option><option>Boarding & Daycare</option><option>Training & Behavior</option></select></div>
+        <div><label for="fp">Pet type</label><select id="fp"><option>Dog</option><option>Cat</option><option>Bird</option><option>Small pet</option><option>Other</option></select></div>
+        <div class="full"><label for="fd">Preferred date</label><input id="fd" type="date"></div>
+        <div class="full"><label for="fm">Message</label><textarea id="fm" placeholder="Tell us about your pet..."></textarea></div>
+        <button class="btn full" type="submit">Send message</button>
+        <div class="ok" id="ok">Thank you! We will reply very soon. 🐾</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer><div class="container">© 2026 <b>PawPals Pet Shop</b>. Made with love for pets.</div></footer>
+
+<script>
+// Nav: close mobile menu after tapping a link
+const toggle = document.getElementById('nav-toggle');
+document.querySelectorAll('.menu a').forEach(a => a.addEventListener('click', () => toggle.checked = false));
+
+// Active link highlight while scrolling
+const links = [...document.querySelectorAll('.menu a')];
+const secs = links.map(a => document.querySelector(a.getAttribute('href')));
+const spy = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+}), {rootMargin: '-45% 0px -50% 0px'});
+secs.forEach(s => s && spy.observe(s));
+
+// Scroll reveal
+const rev = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); rev.unobserve(e.target); } }), {threshold: .12});
+document.querySelectorAll('.reveal').forEach(el => rev.observe(el));
+
+// Count-up numbers
+const cnt = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  const el = e.target, end = parseFloat(el.dataset.count), dec = String(end).includes('.') ? 1 : 0, t0 = performance.now();
+  (function step(t) {
+    const p = Math.min((t - t0) / 1400, 1);
+    el.textContent = (end * p).toFixed(dec) + (p === 1 && end >= 100 ? '+' : '');
+    if (p < 1) requestAnimationFrame(step);
+  })(t0);
+  cnt.unobserve(el);
+}), {threshold: .6});
+document.querySelectorAll('[data-count]').forEach(el => cnt.observe(el));
+
+// Filter chips (products + team)
+document.querySelectorAll('.chips').forEach(box => {
+  box.addEventListener('click', e => {
+    const chip = e.target.closest('.chip'); if (!chip) return;
+    box.querySelectorAll('.chip').forEach(c => c.classList.toggle('on', c === chip));
+    document.querySelectorAll(box.dataset.target).forEach(it => it.classList.toggle('hide', chip.dataset.filter !== 'all' && it.dataset.cat !== chip.dataset.filter));
+  });
+});
+
+// Mascot: click for a bark bubble
+const mascot = document.getElementById('mascot'), bubble = document.getElementById('bubble');
+mascot.addEventListener('click', () => { bubble.classList.add('show'); setTimeout(() => bubble.classList.remove('show'), 1400); });
+
+// Prefill contact form from service buttons
+const fs = document.getElementById('fs');
+document.querySelectorAll('[data-service]').forEach(a => a.addEventListener('click', () => { fs.value = a.dataset.service; }));
+
+// Quick booking bar -> contact form
+document.getElementById('quickForm').addEventListener('submit', e => {
+  e.preventDefault();
+  fs.value = document.getElementById('qs').value;
+  document.getElementById('fp').value = document.getElementById('qp').value;
+  document.getElementById('fd').value = document.getElementById('qd').value;
+  document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+});
+
+// Contact form (demo). To really send emails, add EmailJS here:
+// emailjs.init('YOUR_PUBLIC_KEY'); emailjs.send('SERVICE_ID','TEMPLATE_ID',{...});  (never put a Gmail password in code)
+document.getElementById('contactForm').addEventListener('submit', e => {
+  e.preventDefault();
+  document.getElementById('ok').classList.add('show');
+  e.target.reset();
+});
+</script>
+</body>
+</html>
